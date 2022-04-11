@@ -27,8 +27,8 @@ This application can be used to write and save notes. It uses an Express.js back
 * Express.js
 
 ## Links
-Here is the link to the deployed application:
-Here is the link to the GitHub URL:
-Here is the clone url to the GitHub repository:
+* Here is the link to the deployed application:
+* Here is the link to the GitHub URL:
+* Here is the git clone url to the GitHub repository:
 
 ## Screenshots
