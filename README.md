@@ -15,7 +15,7 @@ This application can be used to write and save notes. It uses an Express.js back
 ## Installation
 1. Fork repository
 2. Clone repository to local environment
-3. Run npm install to install dependencies (fs)
+3. Run npm install to install dependencies (express, fs)
 
 ## Usage
 
