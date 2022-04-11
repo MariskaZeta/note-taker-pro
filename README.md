@@ -1,14 +1,14 @@
 # note-taker-pro
 
 ## Description
+This application can be used to write and save notes. It uses an Express.js back end and it saves and retrieves note data from a JSON file.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [Technologies](#technologies)
-- [Github](#github)
-- [Video](#video)
+- [Links](#links)
 - [Screenshots](#screenshots)
 
 
@@ -26,10 +26,9 @@
 * Node.js
 * Express.js
 
-## Github
-Here is the link to the GitHub URL-
-
-## Video
-Here is the link to the command line video demonstration:
+## Links
+Here is the link to the deployed application:
+Here is the link to the GitHub URL:
+Here is the clone url to the GitHub repository:
 
 ## Screenshots
