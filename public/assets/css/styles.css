@@ -16,11 +16,25 @@ body {
   cursor: pointer;
 }
 
+
+
 .note-textarea,
 .note-title {
   color: #000000;
   width: 100%;
   outline: none;
+  border: none;
+}
+
+input:focus {
+  border-width: 0px;
+  border: none;
+  outline: none!important;
+
+}
+.note-textarea:focus, .note-title:focus {
+
+  border-width: 0px;
   border: none;
 }
 
@@ -31,9 +45,10 @@ body {
 }
 
 .note-title {
-  height: 50px;
+  /* height: 50px; */
   margin-top: 13px;
-  font-size: 3rem;
+  font-size: 50px!important;
+
 }
 
 .note-title:read-only,

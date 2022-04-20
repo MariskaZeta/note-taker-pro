@@ -1,6 +1,5 @@
 // Madison Kendall note taker pro app code
 const express = require("express");
-const database = require("./Develop/db/db");
 
 // API routes
 const apiRoutes = require('./routes/apiRoutes');
@@ -11,7 +10,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 const app = express();
 
 // setting initial port to 3000
-const PORT = process.env.PORT || 3000;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static("public"));
 app.use(express.urlencoded({ extended: true }));
@@ -21,6 +20,6 @@ app.use('/api', apiRoutes);
 app.use('/', htmlRoutes);
 
 
-app.listen(PORT, function() {
+app.listen(PORT, () => {
   console.log(`App listening on PORT: ${PORT}`);
 });

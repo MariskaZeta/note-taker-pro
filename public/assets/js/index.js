@@ -1,8 +1,24 @@
-const $noteTitle = $(".note-title");
-const $noteText = $(".note-textarea");
-const $saveNoteBtn = $(".save-note");
-const $newNoteBtn = $(".new-note");
-const $noteList = $(".list-container .list-group");
+let noteTitle;
+let noteText;
+let saveNoteBtn;
+let newNoteBtn;
+let noteList;
+
+if (window.location.pathname === '/notes') {
+  noteTitle = document.querySelector('.note-title');
+  noteText = document.querySelector('.note-textarea');
+  saveNoteBtn = document.querySelector('.save-note');
+  newNoteBtn = document.querySelector('.new-note');
+  noteList = document.querySelectorAll('.savedNotes');
+  noteListNonArray = document.querySelector('.savedNotes');
+}
+
+// function to create a random id
+function randomId() {
+  return Math.floor((1 + Math.random()) * 0x10000)
+  .toString(16)
+  .substring(1);
+}
 
 // Show an element
 const show = (elem) => {
@@ -59,9 +75,11 @@ const renderActiveNote = () => {
 };
 
 const handleNoteSave = () => {
+
   const newNote = {
     title: noteTitle.value,
     text: noteText.value,
+    id: randomId()
   };
   saveNote(newNote).then(() => {
     getAndRenderNotes();
@@ -77,11 +95,13 @@ const handleNoteDelete = (e) => {
   const note = e.target;
   const noteId = JSON.parse(note.parentElement.getAttribute('data-note')).id;
 
+
   if (activeNote.id === noteId) {
     activeNote = {};
   }
 
   deleteNote(noteId).then(() => {
+
     getAndRenderNotes();
     renderActiveNote();
   });
@@ -101,17 +121,22 @@ const handleNewNoteView = (e) => {
 };
 
 const handleRenderSaveBtn = () => {
+
   if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
     show(saveNoteBtn);
+
   }
 };
 
 // Render the list of note titles
 const renderNoteList = async (notes) => {
+
   let jsonNotes = await notes.json();
+  console.log(jsonNotes);
   if (window.location.pathname === '/notes') {
+
     noteList.forEach((el) => (el.innerHTML = ''));
   }
 
@@ -158,21 +183,21 @@ const renderNoteList = async (notes) => {
   });
 
   if (window.location.pathname === '/notes') {
-    noteListItems.forEach((note) => noteList[0].append(note));
+    noteListItems.forEach((note) =>
+    noteListNonArray.appendChild(note)
+    // console.log(noteList)
+    );
   }
 };
 
 // Gets notes from the db and renders them to the sidebar
-const getAndRenderNotes = () => {
-  return getNotes().then(renderNoteList);
-};
+const getAndRenderNotes = () => getNotes().then(renderNoteList);
 
-  $saveNoteBtn.on("click", handleNoteSave);
-  $noteList.on("click", ".list-group-item", handleNoteView);
-  $newNoteBtn.on("click", handleNewNoteView);
-  $noteList.on("click", ".delete-note", handleNoteDelete);
-  $noteTitle.on("keyup", handleRenderSaveBtn);
-  $noteText.on("keyup", handleRenderSaveBtn);
-
+if (window.location.pathname === '/notes') {
+  saveNoteBtn.addEventListener('click', handleNoteSave);
+  newNoteBtn.addEventListener('click', handleNewNoteView);
+  noteTitle.addEventListener('keyup', handleRenderSaveBtn);
+  noteText.addEventListener('keyup', handleRenderSaveBtn);
+}
 
 getAndRenderNotes();

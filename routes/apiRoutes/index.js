@@ -7,7 +7,7 @@ const {
 } = require('../../lib/notes');
 const {
   notes
-} = require('../../Develop/db/db');
+} = require('../../db/db');
 
 router.get('/notes', (req, res) => {
   const jsonData = JSON.parse(fs.readFileSync(path.join(__dirname, '../../db/db.json')));
