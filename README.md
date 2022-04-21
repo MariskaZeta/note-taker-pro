@@ -1,6 +1,7 @@
 # note-taker-pro
 
 ## Deployed with Heroku at:
+https://thawing-forest-88059.herokuapp.com/
 
 ## Description
 This application can be used to write, save, and delete notes. It uses an Express.js back end and it saves and retrieves note data from a JSON file.
@@ -31,8 +32,7 @@ This application can be used to write, save, and delete notes. It uses an Expres
 * Heroku
 
 ## Links
-* Here is the link to the Heroku site:
-* Here is the link to the deployed application:
+* Here is the link to the Heroku site: https://thawing-forest-88059.herokuapp.com/
 * Here is the link to the GitHub URL:
 * Here is the git clone url to the GitHub repository:
 
