@@ -33,4 +33,3 @@ This application can be used to write, save, and delete notes. It uses an Expres
 * Here is the git clone url to the GitHub repository:
 
 ## Screenshot
-![Screenshot of Note Taker Pro app](./public/assets/screenshots/Note-Taker-Pro.jpg)
