@@ -11,7 +11,7 @@ This application can be used to write, save, and delete notes. It uses an Expres
 - [Installation](#installation)
 - [Technologies](#technologies)
 - [Links](#links)
-- [Screenshots](#screenshots)
+- [Screenshot](#screenshot)
 
 
 ## Installation
@@ -33,4 +33,5 @@ This application can be used to write, save, and delete notes. It uses an Expres
 * Here is the link to the GitHub URL:
 * Here is the git clone url to the GitHub repository:
 
-## Screenshots
+## Screenshot
+![Screenshot of Note Taker Pro app](./public/assets/screenshots/Note-Taker-Pro.png)
