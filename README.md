@@ -13,7 +13,6 @@ This application can be used to write, save, and delete notes. It uses an Expres
 - [Links](#links)
 - [Screenshot](#screenshot)
 
-
 ## Installation
 1. Clone repository to local environment
 2. Run npm install to install dependencies (express, fs)
@@ -34,4 +33,4 @@ This application can be used to write, save, and delete notes. It uses an Expres
 * Here is the git clone url to the GitHub repository:
 
 ## Screenshot
-![Screenshot of Note Taker Pro app](./public/assets/screenshots/Note-Taker-Pro.png)
+![Screenshot of Note Taker Pro app](./public/assets/screenshots/Note-Taker-Pro.jpg)
