@@ -29,8 +29,8 @@ This application can be used to write, save, and delete notes. It uses an Expres
 
 ## Links
 * Here is the link to the Heroku site: https://thawing-forest-88059.herokuapp.com/
-* Here is the link to the GitHub URL:
-* Here is the git clone url to the GitHub repository:
+* Here is the link to the GitHub URL: https://github.com/MariskaZeta/note-taker-pro
+* Here is the git clone url to the GitHub repository: https://github.com/MariskaZeta/note-taker-pro.git
 
 ## Screenshot
 <img width="1720" alt="Note_Taker_Pro_app_screenshot" src="https://user-images.githubusercontent.com/102756451/164514492-52cd236d-b132-4be6-a198-b1b2c6578b3b.png">
