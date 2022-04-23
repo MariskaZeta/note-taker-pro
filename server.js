@@ -9,7 +9,7 @@ const htmlRoutes = require('./routes/htmlRoutes');
 // tells node that we are creating an express server
 const app = express();
 
-// setting initial port to 3000
+// setting initial port to 3001
 const PORT = process.env.PORT || 3001;
 
 app.use(express.static("public"));
